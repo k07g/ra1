@@ -10,4 +10,5 @@ fetch("https://wings.msn.to/tmp/it/nothing.php")
   // 正常終了時は結果をログ出力
   .then((text) => console.log(text))
   // 例外発生時は例外メッセージをログ出力
-  .catch((err) => console.error(err.message));
+  .catch((err) => console.error(err.message))
+  .finally(() => console.log("処理が終了しました"));
