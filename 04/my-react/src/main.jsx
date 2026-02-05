@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 //import App from './App.jsx'
 import AppClass from './AppClass.jsx'
+import MyHello from './MyHello.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -22,5 +23,6 @@ setInterval(() => {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AppClass />
+    <MyHello myName="鈴木" />
   </StrictMode>
 )
