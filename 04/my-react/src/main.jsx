@@ -10,6 +10,7 @@ import ForList from './ForList.jsx'
 import books from './books';
 import ForNest from './ForNest.jsx'
 import ForFilter from './ForFilter.jsx'
+import ForSort from './ForSort.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -35,5 +36,6 @@ createRoot(document.getElementById('root')).render(
     <ForList src={books} />
     <ForNest src={books} />
     <ForFilter src={books} />
+    <ForSort src={books} />
   </StrictMode>
 )
