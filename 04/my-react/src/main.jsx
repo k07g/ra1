@@ -9,6 +9,7 @@ import StateBasic from './StateBasic.jsx'
 import ForList from './ForList.jsx'
 import books from './books';
 import ForNest from './ForNest.jsx'
+import ForFilter from './ForFilter.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -33,5 +34,6 @@ createRoot(document.getElementById('root')).render(
     <StateBasic init={0} />
     <ForList src={books} />
     <ForNest src={books} />
+    <ForFilter src={books} />
   </StrictMode>
 )
