@@ -4,6 +4,7 @@ import './index.css'
 //import App from './App.jsx'
 import AppClass from './AppClass.jsx'
 import MyHello from './MyHello.jsx'
+import EventBasic from './EventBasic.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -24,5 +25,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AppClass />
     <MyHello myName="鈴木" />
+    <EventBasic type="time" />
   </StrictMode>
 )
