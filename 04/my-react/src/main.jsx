@@ -8,6 +8,7 @@ import EventBasic from './EventBasic.jsx'
 import StateBasic from './StateBasic.jsx'
 import ForList from './ForList.jsx'
 import books from './books';
+import ForNest from './ForNest.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -31,5 +32,6 @@ createRoot(document.getElementById('root')).render(
     <EventBasic type="time" />
     <StateBasic init={0} />
     <ForList src={books} />
+    <ForNest src={books} />
   </StrictMode>
 )
