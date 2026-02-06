@@ -6,6 +6,8 @@ import AppClass from './AppClass.jsx'
 import MyHello from './MyHello.jsx'
 import EventBasic from './EventBasic.jsx'
 import StateBasic from './StateBasic.jsx'
+import ForList from './ForList.jsx'
+import books from './books';
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -28,5 +30,6 @@ createRoot(document.getElementById('root')).render(
     <MyHello myName="鈴木" />
     <EventBasic type="time" />
     <StateBasic init={0} />
+    <ForList src={books} />
   </StrictMode>
 )
