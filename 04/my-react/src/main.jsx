@@ -16,6 +16,7 @@ import SelectStyle from "./SelectStyle.jsx";
 import StyledPanel from "./StyledPanel.jsx";
 import TitledPanel from "./TitledPanel.jsx";
 import ListTemplate from "./ListTemplate.jsx";
+import StateParent from "./StateParent.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -67,5 +68,6 @@ createRoot(document.getElementById("root")).render(
         </>
       )}
     />
+    <StateParent />
   </StrictMode>,
 );
