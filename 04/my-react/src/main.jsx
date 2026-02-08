@@ -15,6 +15,7 @@ import SelectComp from "./SelectComp.jsx";
 import SelectStyle from "./SelectStyle.jsx";
 import StyledPanel from "./StyledPanel.jsx";
 import TitledPanel from "./TitledPanel.jsx";
+import ListTemplate from "./ListTemplate.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -51,5 +52,19 @@ createRoot(document.getElementById("root")).render(
       <p key="title">メンバー募集中！</p>
       <p key="body">ようこそ、WINGSプロジェクトへ！！</p>
     </TitledPanel>
+    <ListTemplate src={books}>
+      {(elem) => (
+        <>
+          <dt>
+            <a
+              href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}
+            >
+              {elem.title} ({elem.price}円)
+            </a>
+          </dt>
+          <dd>{elem.summary}</dd>
+        </>
+      )}
+    </ListTemplate>
   </StrictMode>,
 );
