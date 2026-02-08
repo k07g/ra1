@@ -13,6 +13,7 @@ import ForFilter from './ForFilter.jsx'
 import ForSort from './ForSort.jsx'
 import SelectComp from './SelectComp.jsx'
 import SelectStyle from './SelectStyle.jsx'
+import StyledPanel from './StyledPanel.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -41,5 +42,9 @@ createRoot(document.getElementById('root')).render(
     <ForSort src={books} />
     <SelectComp />
     <SelectStyle mode="light" />
+    <StyledPanel>
+      <p>メンバー募集中！</p>
+      <p>ようこそ、WINGSプロジェクトへ！！</p>
+    </StyledPanel>
   </StrictMode>
 )
