@@ -11,6 +11,7 @@ import books from './books';
 import ForNest from './ForNest.jsx'
 import ForFilter from './ForFilter.jsx'
 import ForSort from './ForSort.jsx'
+import SelectComp from './SelectComp.jsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -37,5 +38,6 @@ createRoot(document.getElementById('root')).render(
     <ForNest src={books} />
     <ForFilter src={books} />
     <ForSort src={books} />
+    <SelectComp />
   </StrictMode>
 )
