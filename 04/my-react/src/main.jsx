@@ -1,19 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 //import App from './App.jsx'
-import AppClass from './AppClass.jsx'
-import MyHello from './MyHello.jsx'
-import EventBasic from './EventBasic.jsx'
-import StateBasic from './StateBasic.jsx'
-import ForList from './ForList.jsx'
-import books from './books';
-import ForNest from './ForNest.jsx'
-import ForFilter from './ForFilter.jsx'
-import ForSort from './ForSort.jsx'
-import SelectComp from './SelectComp.jsx'
-import SelectStyle from './SelectStyle.jsx'
-import StyledPanel from './StyledPanel.jsx'
+import AppClass from "./AppClass.jsx";
+import MyHello from "./MyHello.jsx";
+import EventBasic from "./EventBasic.jsx";
+import StateBasic from "./StateBasic.jsx";
+import ForList from "./ForList.jsx";
+import books from "./books";
+import ForNest from "./ForNest.jsx";
+import ForFilter from "./ForFilter.jsx";
+import ForSort from "./ForSort.jsx";
+import SelectComp from "./SelectComp.jsx";
+import SelectStyle from "./SelectStyle.jsx";
+import StyledPanel from "./StyledPanel.jsx";
+import TitledPanel from "./TitledPanel.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -30,7 +31,7 @@ setInterval(() => {
   );
 }, 1000);
 */
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AppClass />
     <MyHello myName="鈴木" />
@@ -46,5 +47,9 @@ createRoot(document.getElementById('root')).render(
       <p>メンバー募集中！</p>
       <p>ようこそ、WINGSプロジェクトへ！！</p>
     </StyledPanel>
-  </StrictMode>
-)
+    <TitledPanel>
+      <p key="title">メンバー募集中！</p>
+      <p key="body">ようこそ、WINGSプロジェクトへ！！</p>
+    </TitledPanel>
+  </StrictMode>,
+);
