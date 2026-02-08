@@ -52,8 +52,9 @@ createRoot(document.getElementById("root")).render(
       <p key="title">メンバー募集中！</p>
       <p key="body">ようこそ、WINGSプロジェクトへ！！</p>
     </TitledPanel>
-    <ListTemplate src={books}>
-      {(elem) => (
+    <ListTemplate
+      src={books}
+      render={(elem) => (
         <>
           <dt>
             <a
@@ -65,6 +66,6 @@ createRoot(document.getElementById("root")).render(
           <dd>{elem.summary}</dd>
         </>
       )}
-    </ListTemplate>
+    />
   </StrictMode>,
 );
