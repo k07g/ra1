@@ -26,6 +26,7 @@ import EventKey from "./EventKey.jsx";
 import EventArgs from "./EventArgs.jsx";
 import EventArgs2 from "./EventArgs2.jsx";
 import EventPropagation from "./EventPropagation.jsx";
+import EventOnce from "./EventOnce.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -91,5 +92,6 @@ createRoot(document.getElementById("root")).render(
     <EventArgs />
     <EventArgs2 />
     <EventPropagation />
+    <EventOnce />
   </StrictMode>,
 );
