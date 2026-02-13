@@ -18,6 +18,7 @@ import TitledPanel from "./TitledPanel.jsx";
 import ListTemplate from "./ListTemplate.jsx";
 import StateParent from "./StateParent.jsx";
 import EventMouse from "./EventMouse.jsx";
+import EventCompare from "./EventCompare.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -75,5 +76,6 @@ createRoot(document.getElementById("root")).render(
       defaultSrc="https://www.web-deli.com/image/linkbanner_l.gif"
       afterSrc="https://www.web-deli.com/image/home_chara.gif"
     />
+    <EventCompare />
   </StrictMode>,
 );
