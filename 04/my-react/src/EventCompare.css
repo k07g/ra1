@@ -1,0 +1,15 @@
+#outer {
+  height: 200px;
+  width: 200px;
+  margin-left: 100px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+#inner {
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+  padding: 10px;
+  border: 1px solid red;
+}
