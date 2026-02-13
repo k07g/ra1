@@ -11,16 +11,19 @@ export default function EventPoint() {
   const handleMousemove = (e) => {
     setScreen({ x: e.screenX, y: e.screenY });
     setPage({ x: e.pageX, y: e.pageY });
-    setClient({x:e.clientX,y:e.clientY});
-    setOffset({x:e.nativeEvent.offsetX,y:e.nativeEvent.offsetY});
+    setClient({ x: e.clientX, y: e.clientY });
+    setOffset({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
   };
 
-  return(
+  return (
     <div id="main" onMouseMove={handleMousemove}>
-        screen: {screen.x}/{screen.y}<br />
-        page: {page.x}/{page.y}<br />
-        client: {client.x}/{client.y}<br />
-        offset: {offset.x}/{offset.y}
+      screen: {screen.x}/{screen.y}
+      <br />
+      page: {page.x}/{page.y}
+      <br />
+      client: {client.x}/{client.y}
+      <br />
+      offset: {offset.x}/{offset.y}
     </div>
   );
 }
