@@ -24,6 +24,7 @@ import EventObj from "./EventObj.jsx";
 import EventPoint from "./EventPoint.jsx";
 import EventKey from "./EventKey.jsx";
 import EventArgs from "./EventArgs.jsx";
+import EventArgs2 from "./EventArgs2.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -87,5 +88,6 @@ createRoot(document.getElementById("root")).render(
     <EventPoint />
     <EventKey />
     <EventArgs />
+    <EventArgs2 />
   </StrictMode>,
 );
