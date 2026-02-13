@@ -19,6 +19,7 @@ import ListTemplate from "./ListTemplate.jsx";
 import StateParent from "./StateParent.jsx";
 import EventMouse from "./EventMouse.jsx";
 import EventCompare from "./EventCompare.jsx";
+import EventError from "./EventError.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -77,5 +78,6 @@ createRoot(document.getElementById("root")).render(
       afterSrc="https://www.web-deli.com/image/home_chara.gif"
     />
     <EventCompare />
+    <EventError src="/image/wings.jpg" alt="サンプル画像" />
   </StrictMode>,
 );
