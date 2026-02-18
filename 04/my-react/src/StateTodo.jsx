@@ -44,6 +44,11 @@ export default function StateTodo() {
     );
   };
 
+  // [削除]ボタンで該当するTodo項目を破棄
+  const handleRemove = (e) => {
+    setTodo(todo.filter((item) => item.id !== Number(e.target.dataset.id)));
+  };
+
   return (
     <div>
       <label>
@@ -66,6 +71,9 @@ export default function StateTodo() {
             {item.title}
             <button type="button" onClick={handleDone} data-id={item.id}>
               済
+            </button>
+            <button type="button" onClick={handleRemove} data-id={item.id}>
+              削除
             </button>
           </li>
         ))}
