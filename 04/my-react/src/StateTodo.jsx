@@ -7,6 +7,8 @@ export default function StateTodo() {
   // 入力値(title)、Todoリスト(todo)
   const [title, setTitle] = useState("");
   const [todo, setTodo] = useState([]);
+  // 次のソート方向(降順であればtrue)
+  const [desc, setDesc] = useState(true);
 
   // テキストボックスへの入力をStateに反映
   const handleChangeTitle = (e) => {
@@ -49,6 +51,23 @@ export default function StateTodo() {
     setTodo(todo.filter((item) => item.id !== Number(e.target.dataset.id)));
   };
 
+  const handleSort = (e) => {
+    // 既存のTodoリストを複製の上でソート
+    const sorted = [...todo];
+    sorted.sort((m, n) => {
+      // desc値に応じて昇順/降順を決定
+      if (desc) {
+        return n.created.getTime() - m.created.getTime();
+      } else {
+        return m.created.getTime() - n.created.getTime();
+      }
+    });
+    // desc値を反転
+    setDesc((d) => !d);
+    // ソート済みのリストを再セット
+    setTodo(sorted);
+  };
+
   return (
     <div>
       <label>
@@ -62,6 +81,10 @@ export default function StateTodo() {
       </label>
       <button type="button" onClick={handleClick}>
         追加
+      </button>
+      {/* desc値に応じてキャプションを変更 */}
+      <button type="button" onClick={handleSort}>
+        ソート ({desc ? "↑" : "↓"})
       </button>
       <hr />
       {/* Todoをリストに整形 */}
