@@ -28,6 +28,7 @@ import EventArgs2 from "./EventArgs2.jsx";
 import EventPropagation from "./EventPropagation.jsx";
 import EventOnce from "./EventOnce.jsx";
 import EventPassive from "./EventPassive.jsx";
+import StateTodo from "./StateTodo.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -95,5 +96,6 @@ createRoot(document.getElementById("root")).render(
     <EventPropagation />
     <EventOnce />
     <EventPassive />
+    <StateTodo />
   </StrictMode>,
 );
