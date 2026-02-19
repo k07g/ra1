@@ -29,6 +29,7 @@ import EventPropagation from "./EventPropagation.jsx";
 import EventOnce from "./EventOnce.jsx";
 import EventPassive from "./EventPassive.jsx";
 import StateTodo from "./StateTodo.jsx";
+import FormBasic from "./FormBasic.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -97,5 +98,6 @@ createRoot(document.getElementById("root")).render(
     <EventOnce />
     <EventPassive />
     <StateTodo />
+    <FormBasic />
   </StrictMode>,
 );
