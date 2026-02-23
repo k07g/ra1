@@ -14,7 +14,7 @@ export default function FormBasic() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors,isDirty,isValid },
   } = useForm({
     defaultValues,
   });
@@ -103,7 +103,7 @@ export default function FormBasic() {
           <div className="error">{errors.memo?.message}</div>
         </div>
         <div>
-          <button type="submit">送信</button>
+          <button type="submit" disabled={!isDirty || !isValid}>送信</button>
         </div>
       </div>
     </form>
