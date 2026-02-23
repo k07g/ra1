@@ -88,6 +88,16 @@ export default function FormBasic() {
                 value: 10,
                 message: "備考は10文字以上にしてください。",
               },
+              validate: {
+                ng: (value, formValues) => {
+                  // 不適切ワードを準備
+                  const ngs = ["暴力", "死", "グロ"];
+                  // 入力文字列に不適切ワードが含まれているかを判定
+                  return ngs.some((ng) => value.includes(ng))
+                    ? "備考にNGワードが含まれています。"
+                    : true;
+                },
+              },
             })}
           />
           <div className="error">{errors.memo?.message}</div>
