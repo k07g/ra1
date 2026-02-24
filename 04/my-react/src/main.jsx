@@ -30,6 +30,7 @@ import EventOnce from "./EventOnce.jsx";
 import EventPassive from "./EventPassive.jsx";
 import StateTodo from "./StateTodo.jsx";
 import FormBasic from "./FormBasic.jsx";
+import FormYup from "./FormYup.jsx";
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -99,5 +100,6 @@ createRoot(document.getElementById("root")).render(
     <EventPassive />
     <StateTodo />
     <FormBasic />
+    <FormYup />
   </StrictMode>,
 );
